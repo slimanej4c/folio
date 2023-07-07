@@ -171,7 +171,7 @@ function projets(props) {
       eng: [
         {
           id: 1,
-          title: "Explore My Achievements and Recent Projects",
+          title: "Explore My Achievements and Recent Projects  ",
         },
       ],
     },

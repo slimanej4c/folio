@@ -16,7 +16,7 @@ function competence(props) {
       eng: [
         {
           id: 1,
-          title: "Skills I possess",
+          title: "Skills I possess               ",
         },
       ],
     },
@@ -183,7 +183,7 @@ function competence(props) {
     <div className='competence-page'>
           <div className='big-title'>
 
-          <motion.h1 variants={titleVariants} initial="hidden" whileInView="visible" >
+          <motion.h1 variants={titleVariants} initial="hidden" whileInView="visible"  viewport={{ once: true }} >
                         {contenu[0][props.langue][0].title.split("").map((letter) => (
                       <motion.span key={1} variants={letterVariants}>{letter}</motion.span>
                     ))}

@@ -30,7 +30,7 @@ const inter = Inter({ subsets: ['latin'] })
       eng: [
         {
           id: 1,
-          title: "Hi, I'm Slimane Benmayouf, specialized in creating websites, mobile apps, and desktop apps.",
+          title: "Hi, I'm Slimane Benmayouf, specialized in creating websites, mobile apps, and desktop apps.                                    ",
           text: "I'm a freelancer specialized in developing high-performance and responsive web and mobile solutions. With expertise in Next.js, React.js, Django, React Native, and Python, I'm able to create exceptional user experiences for my clients.",
         },
       ],

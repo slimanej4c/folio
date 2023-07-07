@@ -16,7 +16,7 @@ function apropos(props) {
       eng: [
         {
           id: 1,
-          title: "About Me",
+          title: "About Me       ",
           text: "I am a passionate developer with expertise in cutting-edge technologies. My specialty primarily focuses on creating websites and applications using frameworks such as React JS, Next JS, and React Native. I am also proficient in Python programming, which allows me to develop customized desktop applications. With a strong background in frontend and backend development, I am capable of designing interactive, responsive, and aesthetically appealing user interfaces. I have a good understanding of key concepts such as state management, reusable components, and data manipulation. My goal is to create innovative technological solutions that meet the unique needs of my clients. I am constantly keeping up with the latest trends and emerging technologies to deliver top-quality products. If you are looking for an experienced developer for your next website or application project, feel free to contact me. I look forward to leveraging my skills and expertise to contribute to your success."
         },
       ],

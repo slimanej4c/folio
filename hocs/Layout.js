@@ -241,6 +241,7 @@ const Nav=()=>{
         type="checkbox"
         checked={props.langue==="fr" ? false : true}
         onClick={()=>handleClick()}
+  
       />
                     { link_array[0][ props.langue].map((item) => (
             <motion.li

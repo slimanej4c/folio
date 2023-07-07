@@ -360,24 +360,30 @@ background-color: #f75a36;
      }
   
      .switch {
-      position: relative;
+      font-size:11px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 1.5rem;
       width: 3rem;
+      right: 20%;
       cursor: pointer;
       appearance: none;
       -webkit-appearance: none;
       border-radius: 9999px;
-      background-color: rgba(100, 116, 139, 0.377);
+      background-color: rgba(228, 203, 106, 0.377);
       transition: all .3s ease;
     }
     
     .switch:checked {
-      background-color: rgba(236, 72, 153, 1);
+      background-color: rgb(16, 1, 8);
+
     }
     
     .switch::before {
       position: absolute;
-      content: "";
+      content: "FR";
       left: calc(1.5rem - 1.6rem);
       top: calc(1.5rem - 1.6rem);
       display: block;
@@ -386,22 +392,28 @@ background-color: #f75a36;
       cursor: pointer;
       border: 1px solid rgba(100, 116, 139, 0.527);
       border-radius: 9999px;
-      background-color: rgba(255, 255, 255, 1);
+      background-color: rgb(254, 232, 166);
       box-shadow: 0 3px 10px rgba(100, 116, 139, 0.327);
+      display: flex;
+      justify-content: center;
+      align-items: center;
       transition: all .3s ease;
     }
     
     .switch:hover::before {
       box-shadow: 0 0 0px 8px rgba(0, 0, 0, .15)
+
     }
     
     .switch:checked:hover::before {
-      box-shadow: 0 0 0px 8px rgba(236, 72, 153, .15)
+      box-shadow: 0 0 0px 8px rgba(236, 72, 153, .15);
+ 
     }
     
     .switch:checked:before {
       transform: translateX(100%);
-      border-color: rgba(236, 72, 153, 1);
+      border-color: rgb(255, 208, 0);
+      content: "ENG";
     }
     @media screen and (max-width: 700px) {
       .radio-input {
