@@ -4,7 +4,111 @@ import { motion, AnimatePresence , useAnimation} from "framer-motion"
 import { useInView } from 'react-intersection-observer';
 import { connect } from 'react-redux'
 function projets(props) {
-
+  const array_designer_project_domaine = [
+    {
+      fr: [
+        {
+          id: 1,
+          title: "Logos",
+          description: "Conception de logos pour les marques et les entreprises.",
+          domain: "Design graphique",
+        },
+        {
+          id: 2,
+          title: "Infographie",
+          description: "Création d'infographies visuellement attrayantes pour présenter des données.",
+          domain: "Infographie",
+        },
+        {
+          id: 3,
+          title: "Bannières",
+          description: "Conception de bannières publicitaires percutantes pour promouvoir des produits ou des événements.",
+          domain: "Design graphique",
+        },
+        {
+          id: 4,
+          title: "Icons",
+          description: "Création d'icônes personnalisées pour les applications et les interfaces utilisateur.",
+          domain: "Design graphique",
+        },
+        {
+          id: 5,
+          title: "Couverture des livres",
+          description: "Conception de couvertures de livres attrayantes et captivantes.",
+          domain: "Design graphique",
+        },
+        {
+          id: 6,
+          title: "Les Livres KDM",
+          description: "Conception et mise en page de livres KDM (Knowledge Development Maps).",
+          domain: "Design graphique",
+        },
+        {
+          id: 7,
+          title: "Packaging",
+          description: "Conception d'emballages attrayants pour les produits.",
+          domain: "Design packaging",
+        },
+        {
+          id: 8,
+          title: "AI Design",
+          description: "Utilisation de l'intelligence artificielle pour créer des designs innovants et personnalisés.",
+          domain: "Design graphique",
+        },
+      ],
+      eng: [
+        {
+          id: 1,
+          title: "Logos",
+          description: "Logo design for brands and businesses.",
+          domain: "Graphic Design",
+        },
+        {
+          id: 2,
+          title: "Infographics",
+          description: "Creation of visually appealing infographics to present data.",
+          domain: "Infographics",
+        },
+        {
+          id: 3,
+          title: "Banners",
+          description: "Design of impactful advertising banners to promote products or events.",
+          domain: "Graphic Design",
+        },
+        {
+          id: 4,
+          title: "Icons",
+          description: "Creation of custom icons for applications and user interfaces.",
+          domain: "Graphic Design",
+        },
+        {
+          id: 5,
+          title: "Book Covers",
+          description: "Design of attractive and captivating book covers.",
+          domain: "Graphic Design",
+        },
+        {
+          id: 6,
+          title: "KDM Books",
+          description: "Design and layout of KDM (Knowledge Development Maps) books.",
+          domain: "Graphic Design",
+        },
+        {
+          id: 7,
+          title: "Packaging",
+          description: "Design of attractive packaging for products.",
+          domain: "Packaging Design",
+        },
+        {
+          id: 8,
+          title: "AI Design",
+          description: "Utilization of artificial intelligence to create innovative and personalized designs.",
+          domain: "Graphic Design",
+        },
+      ],
+    },
+  ];
+  
   
   const projects = [
     {
@@ -182,7 +286,17 @@ function projets(props) {
   return (
     <Layout>
     <div className='project-page'>
-    
+      <div className='domaines'>
+        {array_designer_project_domaine[0]['fr'].map((item)=>{
+
+          return(
+            <div className='domaine'>
+              <h1>{item.title}</h1>
+            </div>
+          )
+        })}
+
+      </div>
             <div className='big-title'>
   
         <motion.h1 variants={titleVariants} initial="hidden" whileInView="visible" >
