@@ -23,7 +23,7 @@ const inter = Inter({ subsets: ['latin'] })
       fr: [
         {
           id: 1,
-          title: "Salut, je suis Slimane Benmayouf, spécialisé dans la création de sites web, d'applications mobiles et d'applications desktop.",
+          title: "Salut, je suis Elh'ouas Bourekhis, spécialisé dans la création de sites web, d'applications mobiles et d'applications desktop.",
           text: "Je suis un freelance spécialisé dans le développement de solutions web et mobiles performantes et réactives. Avec une expertise dans Next.js, React.js, Django, React Native et Python, je suis en mesure de créer des expériences utilisateur exceptionnelles pour mes clients.",
         },
       ],

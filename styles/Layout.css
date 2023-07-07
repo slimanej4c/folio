@@ -127,56 +127,61 @@ background-color: #f75a36;
   
   
     }
-    .radio-input .label input {
-      display: none;
-      position:relative;
-    }
-    
-    .radio-input {
-      position: fixed;
-      display: flex;
-      gap: 20px;
-      z-index: 40;
-      right: 5%;
-     
-
-    }
-    
-    .radio-input .label {
-      display: flex;
-    }
-    
-    .radio-input .label .check {
-      color:rgb(78, 72, 72);
-      font-size: 12px;
-      width: 30px;
-      height: 30px;
+    .switch {
+      font-size:11px;
+      position: absolute;
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 50%;
+      height: 1.5rem;
+      width: 3rem;
+      right: 20%;
       cursor: pointer;
-      transition: 0.3s;
-      border: 3px solid transparent;
-      box-shadow: 1px 1px 3px rgba(140, 244, 147, 0.5),
-       -1px -1px 4px rgba(255, 255, 255, 0.5);
+      appearance: none;
+      -webkit-appearance: none;
+      border-radius: 9999px;
+      background-color: rgba(228, 203, 106, 0.377);
+      transition: all .3s ease;
     }
     
-    .radio-input .label input:checked + .check {
-      color:rgb(193, 195, 191);
-      
-      box-shadow: 3px 3px 6px rgba(49, 75, 1, 0.5),
-       -1px -1px 4px rgba(255, 255, 255, 0.5),
-       inset 3px 3px 6px rgba(0, 0, 0, 0.5),
-       inset -1px -1px 4px rgba(255, 255, 255, 0.5);
-      transform: scale(1.1);
+    .switch:checked {
+      background-color: rgb(16, 1, 8);
+
     }
-    .whatsapp-iconn{
-      visibility: hidden;
-   
-      font-size: 0px;
+    
+    .switch::before {
+      position: absolute;
+      content: "FR";
+      left: calc(1.5rem - 1.6rem);
+      top: calc(1.5rem - 1.6rem);
+      display: block;
+      height: 1.6rem;
+      width: 1.6rem;
+      cursor: pointer;
+      border: 1px solid rgba(100, 116, 139, 0.527);
+      border-radius: 9999px;
+      background-color: rgb(254, 232, 166);
+      box-shadow: 0 3px 10px rgba(100, 116, 139, 0.327);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all .3s ease;
+    }
+    
+    .switch:hover::before {
+      box-shadow: 0 0 0px 8px rgba(0, 0, 0, .15)
 
-
+    }
+    
+    .switch:checked:hover::before {
+      box-shadow: 0 0 0px 8px rgba(236, 72, 153, .15);
+ 
+    }
+    
+    .switch:checked:before {
+      transform: translateX(100%);
+      border-color: rgb(255, 208, 0);
+      content: "ENG";
     }
     .layout-nav {
      
@@ -336,29 +341,10 @@ background-color: #f75a36;
      }
      @media screen and (max-width: 790px) {
       .nav-link{margin:8px;font-size: 11px;letter-spacing:2px;}
-      .radio-input {
-        right: 2%;
-       
-      }
-      .whatsapp-iconn{
-
-        position: fixed;
-        right: 3%;
-        bottom: 3%;
-     
- 
-        visibility: visible;
-       
-        z-index: 10;
    
-      }
-      .radio-input .label .check {
-        font-size: 8px;
-        width: 20px;
-        height: 20px;
-      }
      }
   
+<<<<<<< HEAD
      .switch {
       font-size:11px;
       position: absolute;
@@ -415,35 +401,67 @@ background-color: #f75a36;
       border-color: rgb(255, 208, 0);
       content: "ENG";
     }
+=======
+     
+>>>>>>> 9f14d9f4089edfd311ca759c162ffb95b73dce3e
     @media screen and (max-width: 700px) {
-      .radio-input {
-        right: 0px;
-       
-      }
-      .radio-input .label .check {
-        color:rgb(112, 101, 101);
-        font-size: 12px;
-        width: 30px;
-        height: 30px;
+      .switch {
+        font-size:10px;
+        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50%;
+        height: 1.5rem;
+        width: 3rem;
+        left: 50%;
+        top:20%;
+        transform: translate(-50%,-50%);
         cursor: pointer;
-        transition: 0.3s;
-        border: 3px solid transparent;
-        box-shadow: 1px 1px 3px rgba(140, 244, 147, 0.5),
-         -1px -1px 4px rgba(255, 255, 255, 0.5);
+        appearance: none;
+        -webkit-appearance: none;
+        border-radius: 9999px;
+        background-color: rgba(228, 203, 106, 0.377);
+        transition: all .3s ease;
       }
       
-      .radio-input .label input:checked + .check {
-        color:rgb(0, 0, 0);
-        background-color: #8dbe4490;
-        box-shadow: 3px 3px 6px rgba(87, 94, 74, 0.5),
-         -1px -1px 4px rgba(255, 255, 255, 0.5),
-         inset 3px 3px 6px rgba(0, 0, 0, 0.5),
-         inset -1px -1px 4px rgba(24, 24, 24, 0.5);
-        transform: scale(1.1);
+      .switch:checked {
+        background-color: rgb(16, 1, 8);
+  
+      }
+      
+      .switch::before {
+        position: absolute;
+        content: "FR";
+        left: calc(1.5rem - 1.6rem);
+        top: calc(1.5rem - 1.6rem);
+        display: block;
+        height: 1.6rem;
+        width: 1.6rem;
+        cursor: pointer;
+        border: 1px solid rgba(100, 116, 139, 0.527);
+        border-radius: 9999px;
+        background-color: rgb(254, 232, 166);
+        box-shadow: 0 3px 10px rgba(100, 116, 139, 0.327);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease;
+      }
+      
+      .switch:hover::before {
+        box-shadow: 0 0 0px 8px rgba(0, 0, 0, .15)
+  
+      }
+      
+      .switch:checked:hover::before {
+        box-shadow: 0 0 0px 8px rgba(236, 72, 153, .15);
+   
+      }
+      
+      .switch:checked:before {
+        transform: translateX(100%);
+        border-color: rgb(255, 208, 0);
+        content: "ENG";
       }
       .layout-model{
         width: 98%;
