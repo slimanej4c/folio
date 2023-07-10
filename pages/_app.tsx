@@ -15,7 +15,7 @@ import  { store  }  from '../Redux/store';
      
     <Head>
        
-    <title>PSE</title>
+    <title>Portfolio SLIMANE</title>
     <meta name='viewport' content='width=device-width, inital-scale=1' />
     <meta name="theme-color" content="black"></meta>
   </Head>
