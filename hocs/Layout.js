@@ -66,7 +66,7 @@ const firstWord = lang.split('=').slice(0)[0]+"=";
   }
   
   if (lastWord === "eng") {
-    console.log('lang...egal eng.',props.langue,lang ,"laseword:",lastWord,clickedd,"chk",isChecked)
+    console.log('lang...egal eng.',props.langue,lang ,"laseword:",lastWord,";",clickedd,"chk",isChecked)
   
 
     
@@ -247,9 +247,9 @@ const Nav=()=>{
             <motion.li
               key={item.id}
               variants={itemVariants}
-              className={item.to ===lastWord  ? contact_div : other_div}
+              className={item.to ===lang  ? contact_div : other_div}
             >
-              <Link className={item.to ===lastWord  ? "nav-link clicked"  : "nav-link"} 
+              <Link className={item.to ===lang ? "nav-link clicked"  : "nav-link"} 
           
               href={item.to} onClick={() => clicked(item.to)} >
                 {item.title}{getlang}
