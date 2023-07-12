@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import { Provider } from 'react-redux';
 import Head from 'next/head'
 import '../styles/Layout.css'
+import '../styles/contact.css'
 import '../styles/home/section1.css'
 import '../styles/home/home.css'
 import '../styles/competence/competence.css'

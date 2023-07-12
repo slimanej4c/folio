@@ -212,13 +212,15 @@ const link_array = [
         { id: 1, title: 'Accueil', to: `/?lang=fr`},
         { id: 2, title: 'À propos', to: `/apropos?lang=fr`},
         { id: 3, title: 'Compétence', to:  `/competence?lang=fr`},
-        { id: 4, title: 'Projets', to: `/projets?lang=fr` }
+        { id: 4, title: 'Projets', to: `/projets?lang=fr` },
+        { id: 4, title: 'Contact', to: `/contact?lang=fr` },
       ],
       "eng": [
         { id: 1, title: 'Home', to: '/?lang=eng' },
         { id: 2, title: 'About', to: '/apropos?lang=eng' },
         { id: 3, title: 'Skills', to: '/competence?lang=eng' },
-        { id: 4, title: 'Projects', to: '/projets?lang=eng' }
+        { id: 4, title: 'Projects', to:`/projets?lang=fr` },
+        { id: 4, title: 'Contact', to: `/contact?lang=fr` },
       ]
     }
   ];

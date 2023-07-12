@@ -1,3 +1,7 @@
+
+body {
+    background-color: var(--home_bg);
+  }
 .home{
 
     width: 100%;

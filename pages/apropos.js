@@ -47,12 +47,10 @@ function apropos(props) {
   };
     const rotateVariants ={
         initial:{
-          x:'50%',
-          rotate:90 ,
+          opacity:0,
         },
           animate:{
-            x:"0%",
-            rotate: 0 ,
+            opacity:1,
             transition: { duration: 4  , type: "spring",     stiffness: 10,
             mass: 2,
             damping:3,
