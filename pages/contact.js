@@ -61,8 +61,8 @@ export const contact = (props) => {
                       <ul>
                   
                     <li> <FontAwesomeIcon icon={faLocationDot}  className="contact-icon"/> ALGERIA</li>
-                    <li> <FontAwesomeIcon icon={faPhone}  className="contact-icon"/> +213 696 89 13 19</li>
-                    <li> <FontAwesomeIcon icon={faEnvelope}  className="contact-icon"/> slimaneetude@gmail.com</li>
+                    <li> <FontAwesomeIcon icon={faPhone}  className="contact-icon"/>  (438)4832653 </li>
+                    <li> <FontAwesomeIcon icon={faEnvelope}  className="contact-icon"/> benmayoufslimane@gmail.com</li>
          
                     <a href="https://www.facebook.com/slimane.ben.3551?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer"> 
                      <li> <FontAwesomeIcon icon={ faFacebook }  className="contact-icon"/>
